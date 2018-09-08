@@ -12,6 +12,62 @@ https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
 Stopped at 32:37 of 33:57
 https://www.youtube.com/watch?v=NO2DaxhoWHk&app=desktop
 
+## Git Initial Check-in Process
+
+Delete the .git directory if it exists after cloning the repo.
+
+````
+rm -rf .git
+````
+
+Run command:
+
+````
+git status
+````
+
+This should return:
+
+````
+fatal: Not a git repository (or any of the parent directories): .git
+````
+
+Initialize git with command:
+
+````
+git init
+````
+
+This will create a new .git directory
+
+Login to Github and create a new repository ... for example bookwork-react
+
+In the terminal add all the files in the current directory to the local repository. If you don't do this you will see ````Untracked files: (use "git add ..." to include in what will be committed)````.
+
+````
+git add -all
+````
+
+Commit the files to the local repository:
+
+````
+git commit -m "First commit"
+````
+
+Add the wireup to the remote repository in github:
+
+````
+git remote add origin https://github.com/{username}/bookworm-react.git
+````
+
+Push the files to the remote repository, which has the alias origin - master branch:
+
+````
+git push origin master 
+````
+
+## Application Information
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
