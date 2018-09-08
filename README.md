@@ -11,8 +11,9 @@ https://github.com/Remchi/bookworm-react
 Code snippets:
 https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
 
-Stopped at 32:37 of 33:57
-https://www.youtube.com/watch?v=NO2DaxhoWHk&app=desktop
+Video #2
+Stopped at 11:34 of 34:47
+https://www.youtube.com/watch?v=RCPMuJ0zYak
 
 ## Git Initial Check-in Process
 
@@ -67,6 +68,15 @@ Push the files to the remote repository, which has the alias origin - master bra
 ````
 git push origin master 
 ````
+
+## VS Code Push to Github
+
+Source control
+
+1. Stage All Changes
+2. Commit All
+3. Push to... > select remote branch
+4. Enter credentials
 
 ## Application Information
 
