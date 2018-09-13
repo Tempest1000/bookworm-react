@@ -6,14 +6,16 @@ To run lint on all files:
 yarn run lint
 ````
 
+https://github.com/jhipster/jhipster-sample-app-react/blob/master/src/main/webapp/app/shared/reducers/authentication.ts
+
 https://github.com/Remchi/bookworm-react
 
 Code snippets:
 https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
 
-Video #2
-Stopped at 11:34 of 34:47
-https://www.youtube.com/watch?v=RCPMuJ0zYak
+Video #3
+Stopped at 00:00 of 32:55
+https://www.youtube.com/watch?v=1IWzMuJKv6o
 
 ## Git Initial Check-in Process
 
