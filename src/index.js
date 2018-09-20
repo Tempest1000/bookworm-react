@@ -10,13 +10,18 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import rootReducer from "./rootReducer";
-//import { userLoggedIn } from "./actions/authActions";
+import { userLoggedIn } from "./actions/authActions";
 //import setAuthorizationHeader from "./utils/setAuthorizationHeader";
 
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
 );
+
+if (localStorage.bookworkJWT) {
+  const user = { id_token: localStorage.bookworkJWT };
+  store.dispatch(userLoggedIn(user));
+}
 
 // if (localStorage.bookwormJWT) {
 //   const payload = decode(localStorage.bookwormJWT);
