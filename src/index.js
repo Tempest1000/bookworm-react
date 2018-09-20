@@ -10,7 +10,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import rootReducer from "./rootReducer";
-//import { userLoggedIn } from "./actions/auth";
+//import { userLoggedIn } from "./actions/authActions";
 //import setAuthorizationHeader from "./utils/setAuthorizationHeader";
 
 const store = createStore(
