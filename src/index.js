@@ -11,7 +11,7 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import rootReducer from "./rootReducer";
 import { userLoggedIn } from "./actions/authActions";
-//import setAuthorizationHeader from "./utils/setAuthorizationHeader";
+import setAuthorizationHeader from "./utils/setAuthorizationHeader";
 
 const store = createStore(
   rootReducer,
@@ -23,16 +23,16 @@ if (localStorage.bookworkJWT) {
   store.dispatch(userLoggedIn(user));
 }
 
-// if (localStorage.bookwormJWT) {
-//   const payload = decode(localStorage.bookwormJWT);
-//   const user = {
-//     token: localStorage.bookwormJWT,
+ if (localStorage.bookwormJWT) {
+   const payload = decode(localStorage.bookwormJWT);
+   const user = {
+     id_token: localStorage.bookwormJWT,
 //     email: payload.email,
 //     confirmed: payload.confirmed
-//   };
-//   setAuthorizationHeader(localStorage.bookwormJWT);
-//   store.dispatch(userLoggedIn(user));
-// }
+   };
+   setAuthorizationHeader(localStorage.bookwormJWT);
+   store.dispatch(userLoggedIn(user));
+}
 
 ReactDOM.render(
   <BrowserRouter>

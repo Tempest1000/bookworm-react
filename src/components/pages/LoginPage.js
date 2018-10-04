@@ -10,7 +10,7 @@ class LoginPage extends React.Component {
     // need to connect this component to redux to have 
     // the ability to dispatch the login action
     // this is done with the connect function and MapDispatchToProps
-    submit = (data) => this.props.login(data).then(() => this.props.history.push("/"));
+    submit = (data) => this.props.login(data).then(() => this.props.history.push("/dashboard"));
 
     render() {
         return (
