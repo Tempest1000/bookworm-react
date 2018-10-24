@@ -13,9 +13,9 @@ https://github.com/Remchi/bookworm-react
 Code snippets:
 https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
 
-Video #3
-Stopped at 00:00 of 32:55
-https://www.youtube.com/watch?v=1IWzMuJKv6o
+Video #4
+Stopped at 10:38 of 36:38
+https://www.youtube.com/watch?v=c4nO5DHQj0k
 
 ## Git Initial Check-in Process
 
@@ -79,6 +79,10 @@ Source control
 2. Commit All
 3. Push to... > select remote branch
 4. Enter credentials
+
+## Creating a User Route
+
+In App.js a route can be created that only a user can access. This is named UserRoute. 
 
 ## Application Information
 
